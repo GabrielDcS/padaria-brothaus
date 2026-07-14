@@ -20,11 +20,12 @@
     .eyebrow { color:var(--gold); font-size:.73rem; font-weight:700; letter-spacing:.17em; text-transform:uppercase; }
     .nav { position:absolute; inset:0 0 auto; z-index:5; padding:23px 0; color:#fff; }
     .nav .container { display:flex; justify-content:space-between; align-items:center; }
-    .brand { font-family:"Playfair Display",serif; font-size:1.38rem; font-weight:600; letter-spacing:-.04em; }
+    .brand { display:flex; align-items:center; gap:10px; font-family:"Playfair Display",serif; font-size:1.28rem; font-weight:600; letter-spacing:-.04em; }
+    .brand img { width:43px; height:43px; border:1px solid rgba(255,255,255,.55); border-radius:50%; object-fit:cover; }
     .brand span { color:var(--gold); font-style:italic; }
     .nav-links { display:none; gap:28px; font-size:.9rem; }
     .nav-links a:hover { color:var(--gold); }
-    .hero { position:relative; min-height:720px; display:grid; align-items:end; overflow:hidden; color:#fff; background:linear-gradient(90deg,rgba(16,11,7,.94) 0%,rgba(17,11,7,.72) 48%,rgba(17,11,7,.16) 100%), url('https://img.restaurantguru.com/cdd5-Restaurant-Padaria-brothaus-interior.jpg') center/cover; }
+    .hero { position:relative; min-height:720px; display:grid; align-items:end; overflow:hidden; color:#fff; background:linear-gradient(90deg,rgba(16,11,7,.94) 0%,rgba(17,11,7,.72) 48%,rgba(17,11,7,.16) 100%), url('Torta%20de%20Morango.png') center 42%/cover; }
     .hero::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.17; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); mix-blend-mode:soft-light; }
     .hero-content { position:relative; z-index:1; max-width:710px; padding:155px 0 70px; }
     .hero h1 { margin:15px 0 20px; font-size:clamp(2.9rem,7vw,5.55rem); letter-spacing:-.06em; }
@@ -44,9 +45,9 @@
     .product-card { min-height:390px; display:flex; align-items:end; padding:26px; overflow:hidden; position:relative; color:#fff; background:#4d2d1a center/cover; isolation:isolate; transition:transform .3s ease; }
     .product-card:hover { transform:translateY(-7px); }
     .product-card::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(0deg,rgba(17,10,5,.92),rgba(17,10,5,.04) 70%); }
-    .product-card:nth-child(1) { background-image:url('https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=85'); }
-    .product-card:nth-child(2) { background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85'); }
-    .product-card:nth-child(3) { background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85'); }
+    .product-card:nth-child(1) { background-image:url('Brownie.png'); }
+    .product-card:nth-child(2) { background-image:url('Doces.png'); }
+    .product-card:nth-child(3) { background-image:url('Petot%20Gateau.png'); }
     .product-card h3 { margin:0 0 5px; font-size:2rem; }
     .product-card p { margin:0; color:#f2e6d8; }
     .values { background:var(--espresso); color:#fff; }
@@ -57,7 +58,7 @@
     .value h3 { margin-bottom:8px; font-size:1.4rem; }
     .value p { margin:0; color:#d3c4b5; font-size:.94rem; }
     .about { display:grid; padding:0; background:var(--sand); }
-    .about-image { min-height:430px; background:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85') center/cover; }
+    .about-image { min-height:430px; background:url('Taças.png') center/cover; }
     .about-copy { padding:76px 20px; }
     .about-copy h2 { margin:10px 0 18px; font-size:clamp(2.3rem,5vw,3.8rem); letter-spacing:-.055em; }
     .about-copy p { color:#604b3b; }
@@ -68,13 +69,13 @@
     .details-item { padding:17px 0; border-top:1px solid #eadfce; }
     .details-item strong { display:block; margin-bottom:3px; color:var(--brown); font-size:.77rem; letter-spacing:.12em; text-transform:uppercase; }
     .map { min-height:320px; border:0; width:100%; filter:sepia(.25) saturate(.75); }
-    .final-cta { text-align:center; color:#fff; background:linear-gradient(rgba(31,19,11,.79),rgba(31,19,11,.79)),url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1800&q=85') center/cover; }
+    .final-cta { text-align:center; color:#fff; background:linear-gradient(rgba(31,19,11,.79),rgba(31,19,11,.79)),url('Docinho.png') center/cover; }
     .final-cta h2 { max-width:720px; margin:10px auto 25px; font-size:clamp(2.4rem,6vw,4.7rem); letter-spacing:-.06em; }
     .gallery { padding-bottom:0; background:#fbf7f1; }
     .gallery-grid { display:grid; gap:14px; }
     .gallery-card { min-height:260px; position:relative; overflow:hidden; background:#2b1c14 center/cover; }
-    .gallery-card:first-child { min-height:360px; background-image:url('https://img02.restaurantguru.com/c04b-Restaurant-Padaria-brothaus-cake.jpg'); }
-    .gallery-card:nth-child(2) { background-image:url('https://img.restaurantguru.com/cdd5-Restaurant-Padaria-brothaus-interior.jpg'); }
+    .gallery-card:first-child { min-height:360px; background-image:url('TORTA.png'); }
+    .gallery-card:nth-child(2) { background-image:url('Taca%20Kids.png'); }
     .gallery-card::after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(28,16,8,.7),transparent 60%); }
     .gallery-caption { position:absolute; z-index:1; left:20px; bottom:17px; color:#fff; font-family:"Playfair Display",serif; font-size:1.45rem; font-style:italic; }
     footer { padding:28px 0; color:#cbbcae; background:#17100b; font-size:.84rem; }
@@ -84,18 +85,19 @@
     .whatsapp svg { width:29px; height:29px; fill:currentColor; }
     .reveal { opacity:0; transform:translateY(20px); transition:opacity .65s ease,transform .65s ease; }
     .reveal.visible { opacity:1; transform:none; }
+    @media (max-width:460px) { .container { width:min(100% - 28px,1120px); } .nav { padding:15px 0; } .brand { font-size:1.08rem; } .brand img { width:37px; height:37px; } .hero { min-height:680px; } .hero-content { padding-top:128px; } .hero h1 { font-size:2.75rem; } .button { width:100%; } section { padding:62px 0; } .product-card { min-height:330px; } .about-copy { padding:62px 20px; } .whatsapp { width:54px; height:54px; right:14px; bottom:14px; } }
     @media (min-width:680px) { .product-grid { grid-template-columns:repeat(3,1fr); } .value-grid { grid-template-columns:repeat(2,1fr); } .location-grid { grid-template-columns:.82fr 1.18fr; } .gallery-grid { grid-template-columns:1.2fr .8fr; } }
     @media (min-width:850px) { .nav-links { display:flex; } .about { grid-template-columns:1fr 1fr; } .about-copy { padding:92px max(40px,calc((100vw - 1120px)/2)); padding-right:80px; } .value-grid { grid-template-columns:repeat(4,1fr); } }
   </style>
 </head>
 <body>
   <header class="hero" id="inicio">
-    <nav class="nav"><div class="container"><a class="brand" href="#inicio">Das <span>Brothaus</span></a><div class="nav-links"><a href="#produtos">Produtos</a><a href="#historia">Nossa história</a><a href="#localizacao">Visite-nos</a></div></div></nav>
+    <nav class="nav"><div class="container"><a class="brand" href="#inicio"><img src="logo.jpg" alt="Logo Das Brothaus">Das <span>Brothaus</span></a><div class="nav-links"><a href="#produtos">Produtos</a><a href="#historia">Nossa história</a><a href="#localizacao">Visite-nos</a></div></div></nav>
     <div class="container hero-content"><span class="eyebrow">Padaria artesanal · Salvador do Sul</span><h1>Sabores artesanais que transformam o seu dia</h1><p>Entre pelo aroma. Fique pelo sabor. Pães frescos, confeitaria premium e café de verdade, todos os dias.</p><a class="button" href="https://wa.me/5551996433409?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Das%20Brothaus." target="_blank" rel="noopener">Fazer pedido no WhatsApp <span>→</span></a></div>
     <div class="container hero-note"><span class="pulse"></span> Fornadas e delícias frescas esperando por você</div>
   </header>
   <main>
-    <section class="products" id="produtos"><div class="container"><div class="section-heading reveal"><span class="eyebrow">Feito todos os dias</span><h2>Um pequeno ritual de sabor</h2><p>Da primeira fornada ao último espresso, selecionamos cada detalhe para tornar a sua pausa mais especial.</p></div><div class="product-grid"><article class="product-card reveal"><div><h3>Pães artesanais</h3><p>Fermentação lenta, casca dourada e miolo cheio de história.</p></div></article><article class="product-card reveal"><div><h3>Confeitaria</h3><p>Doces delicados, folhados e receitas para celebrar.</p></div></article><article class="product-card reveal"><div><h3>Cafés</h3><p>Grãos especiais e o preparo que merece seu momento.</p></div></article></div></div></section>
+    <section class="products" id="produtos"><div class="container"><div class="section-heading reveal"><span class="eyebrow">Feito todos os dias</span><h2>Um pequeno ritual de sabor</h2><p>Da primeira fornada à sobremesa, selecionamos cada detalhe para tornar a sua pausa mais especial.</p></div><div class="product-grid"><article class="product-card reveal"><div><h3>Brownies especiais</h3><p>Camadas intensas de chocolate, fruta fresca e carinho em cada detalhe.</p></div></article><article class="product-card reveal"><div><h3>Confeitaria</h3><p>Doces delicados e receitas feitas para celebrar bons momentos.</p></div></article><article class="product-card reveal"><div><h3>Taças & sobremesas</h3><p>Texturas, cremosidade e o toque final perfeito para o seu dia.</p></div></article></div></div></section>
     <section class="values"><div class="container"><div class="section-heading reveal"><span class="eyebrow">O jeito Brothaus</span><h2>Mais que uma padaria, um encontro.</h2><p>Cada visita é pensada para despertar os sentidos e fazer você se sentir em casa.</p></div><div class="value-grid"><article class="value reveal"><span class="number">01</span><h3>Feito à mão</h3><p>Produção artesanal diária, no tempo certo de cada receita.</p></article><article class="value reveal"><span class="number">02</span><h3>Boa origem</h3><p>Ingredientes selecionados que respeitam o sabor verdadeiro.</p></article><article class="value reveal"><span class="number">03</span><h3>Com acolhimento</h3><p>Um ambiente aconchegante para desacelerar e compartilhar.</p></article><article class="value reveal"><span class="number">04</span><h3>Com tradição</h3><p>Técnicas europeias e qualidade presente em cada fornada.</p></article></div></div></section>
     <section class="gallery"><div class="container"><div class="section-heading reveal"><span class="eyebrow">O sabor que se vê</span><h2>Um convite antes mesmo da primeira mordida.</h2></div><div class="gallery-grid"><div class="gallery-card reveal"><span class="gallery-caption">Doces feitos para pausar o tempo</span></div><div class="gallery-card reveal"><span class="gallery-caption">O nosso lugar, o seu momento</span></div></div></div></section>
     <section class="about" id="historia"><div class="about-image" role="img" aria-label="Pães artesanais recém assados"></div><div class="about-copy reveal"><span class="eyebrow">Nossa história</span><h2>O pão tem seu próprio tempo. E nós respeitamos.</h2><p>Na Das Brothaus, acreditamos que os melhores sabores nascem da paciência. Por isso, nossa massa descansa, nossos ingredientes são escolhidos com cuidado e cada receita ganha as mãos de quem ama o que faz.</p><p>Inspirados pela tradição europeia e pelo carinho do sul, criamos uma padaria onde o aroma de pão fresco convida você a ficar mais um pouco.</p></div></section>
